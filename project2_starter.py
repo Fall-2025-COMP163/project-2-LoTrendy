@@ -225,7 +225,7 @@ class Rogue(Player):
         Rogues should have a chance for extra damage (critical hits).
         """
         # TODO: Implement rogue attack
-         ran_num = random.randint(1, 10)
+        ran_num = random.randint(1, 10)
         if ran_num <= 2:
         # Could add a chance for critical hit (double damage)
             target.take_damage((self.strength * 2.3))
