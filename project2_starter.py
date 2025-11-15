@@ -302,7 +302,7 @@ if __name__ == "__main__":
     #     print(f"\n{character.name} attacks the dummy:")
     #     character.attack(dummy_target)
     #     dummy_target.health = 100  # Reset dummy health
-     for character in [warrior, mage, rogue]:
+    for character in [warrior, mage, rogue]:
         print(f"\n{character.name} attacks the dummy:")
         character.attack(dummy_target)
         dummy_target.health = 100  # Reset dummy health
