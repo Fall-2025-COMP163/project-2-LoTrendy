@@ -79,10 +79,9 @@ class Character:
         3. Print what happened
         """
         # TODO: Implement basic attack
-        target.take_damage(self.strength / 0.8)
+        damage_points = self.strength / 0.8
         # Damage should be based on self.strength
-        damage_points = target.take_damage(self.strength / 0.8)
-
+        target.take_damage(damage)
         # Use target.take_damage(damage) to apply damage
         print(f'{target} took {damage_points} damage!')
         
@@ -121,8 +120,8 @@ class Player(Character):
         super().__init__(name, health, strength, magic)
         # TODO: Store the character_class (like "Warrior", "Mage", etc.)
         self.character_class = character_class
-        self.level = level
-        self.experience = experience
+        self.level = 1
+        self.experience = 0
         # TODO: Add any other player-specific attributes (level, experience, etc.)
         
     def display_stats(self):
