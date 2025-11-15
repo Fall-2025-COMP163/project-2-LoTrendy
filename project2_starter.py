@@ -166,7 +166,7 @@ class Warrior(Player):
         """
         # TODO: Implement power strike
         # Should do significantly more damage than regular attack
-        target.take_damage((self.strength / 0.8) + 5)
+        target.take_damage((self.strength / 0.8) + 15)
         
 class Mage(Player):
     """
